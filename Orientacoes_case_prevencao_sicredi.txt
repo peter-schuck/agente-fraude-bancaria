@@ -1,0 +1,24 @@
+CASE AVANÇADO DE CIÊNCIA DE DADOS E IA - TRANSAÇÕES DE CARTÕES
+
+ARQUIVO PRINCIPAL: case_transacoes_cartoes_sintetico_900k.csv.gz
+LINHAS: 900,000
+COLUNAS: 297
+
+DISTRIBUIÇÕES CONTROLADAS
+- feedback_label=TRUE: 900 (0,10%)
+- feedback_label=FALSE: 899.100 (99,90%)
+- tipo_transacao=debito: 540.000 (60%)
+- tipo_transacao=credito: 360.000 (40%)
+
+DESENHO DO CASE
+- Cartão não presente, é mais frequente no crédito.
+- Fraudes foram concentradas principalmente em crédito e cartão não presente.
+- Fraudes apresentam sinais probabilísticos de rajadas sequenciais, alta velocidade, horários concentrados, divergência geográfica e valores anômalos.
+- Há nulos em variáveis relevantes e alta ausência em campos secundários para exercícios de qualidade, imputação e seleção de atributos.
+- Clientes, cartões, dispositivos e estabelecimentos se repetem para viabilizar agregações temporais e análise de vazamento.
+
+USO PEDAGÓGICO SUGERIDO
+EDA; qualidade de dados; validação temporal; prevenção de leakage; classificação desbalanceada; PR-AUC; recall/precision; custo de fraude; calibration; thresholding; feature engineering de velocidade; explainability; monitoramento de drift.
+
+DECLARAÇÃO
+TODOS OS REGISTROS SÃO ARTIFICIAIS. IDs, nomes, contatos, documentos, endereços, contas, cartões e estabelecimentos são placeholders sintéticos e não representam pessoas ou organizações reais. O domínio example.invalid foi usado intencionalmente para contatos fictícios.
